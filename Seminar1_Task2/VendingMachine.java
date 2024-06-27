@@ -6,7 +6,7 @@ import Seminar1_Task2.impl.HotDrink;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class VendingMachine {
+public abstract class VendingMachine {
     protected List<Product> products = new ArrayList<>();
 
     public VendingMachine(){
@@ -53,12 +53,16 @@ public class VendingMachine {
         return null;
     }
 
-    public void setProduct(Product product) {
-        this.products.add(product);
-    }
+    public abstract void setProduct(Product product);
 
-    public void initProducts(List<Product> products){
-        this.products.addAll(products);
-    }
+    // public void setProduct(Product product) {
+    //     this.products.add(product);
+    // }
+
+    public abstract void initProducts(List<Product> products);
+
+    // public void initProducts(List<Product> products){
+    //     this.products.addAll(products);
+    // }
 
 }
