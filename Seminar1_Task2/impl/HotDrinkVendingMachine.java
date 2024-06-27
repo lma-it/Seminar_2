@@ -5,7 +5,7 @@ import java.util.List;
 import Seminar1_Task2.Product;
 import Seminar1_Task2.VendingMachine;
 
-public class HotDrinkVendingMachine extends VendingMachine{
+public class HotDrinkVendingMachine extends VendingMachine {
 
     @Override
     public void setProduct(Product product) {
