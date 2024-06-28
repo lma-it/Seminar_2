@@ -8,7 +8,7 @@ public class Task1 {
     public static void main(String[] args) {
         println("Hello");
 
-        Animal cat = new Cat("Tom");
+        Cat cat = new Cat("Tom");
         FlyingAnimal duck = new Duck("Donald");
         Swimable duck2 = new Duck("Don");
 
@@ -25,6 +25,7 @@ public class Task1 {
         duck2.swim(13.6f);// duck2 объявлен как Swimmable, поэтому у него нет методов eat и fly.
 
         cat.eat();
+        cat.swim(3.5f);
 
         
     }

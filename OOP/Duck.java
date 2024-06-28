@@ -2,7 +2,7 @@ package OOP;
 
 import static print_module.print_library.println;
 
-public class Duck extends FlyingAnimal implements Swimable{
+public class Duck extends FlyingAnimal implements Swimable, Diveable{
 
     public Duck(String name) {
         super(name);
@@ -21,6 +21,11 @@ public class Duck extends FlyingAnimal implements Swimable{
     @Override
     public void swim(float speed) {
         println(getType() + " " + getName() +" Кря! Я плыву со скоростью " + speed);
+    }
+
+    @Override
+    public void dive() {
+        println("Кря! Я ныряю");
     }
 
     
