@@ -1,4 +1,4 @@
-package OOP;
+package OOP.Task1;
 
 public abstract class FlyingAnimal extends Animal{
 

@@ -1,4 +1,4 @@
-package OOP;
+package OOP.Task1;
 import static print_module.print_library.println;
 import java.util.List;
 import java.util.ArrayList;
@@ -47,7 +47,9 @@ public class Task1 {
             }
             
         };
-
+        /*
+         * Данная конструкция работает когда в классе интерфесе толбко один не реализованный метод, если их более чем один, то лямбда выражение уже не будет работать.
+         */
         Swimable swimable2 = (speed -> println(speed * speed));
 
         swimable2.swim(12f);

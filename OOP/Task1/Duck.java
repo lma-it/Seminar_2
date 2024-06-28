@@ -1,4 +1,4 @@
-package OOP;
+package OOP.Task1;
 
 import static print_module.print_library.println;
 
