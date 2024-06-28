@@ -1,6 +1,6 @@
 package OOP;
 
-public abstract class Animal {
+public abstract class Animal{
     protected String name;
 
     public Animal(String name){
@@ -13,5 +13,7 @@ public abstract class Animal {
 
     public abstract void eat();
 
-    public abstract void fly();
+    public String getName(){
+        return this.name;
+    }
 }

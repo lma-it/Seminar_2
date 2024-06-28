@@ -10,12 +10,7 @@ public class Cat extends Animal{
 
     @Override
     public void eat() {
-        println(getType() + " Пьет молоко из блюдечка");
-    }
-
-    @Override
-    public void fly() {
-        println(getType() + " Мяу! Я не летаю");
+        println(getType() + " " +  getName() + " Пьет молоко из блюдечка");
     }
     
 }
