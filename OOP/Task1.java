@@ -21,6 +21,7 @@ public class Task1 {
         duck3.eat();
         duck3.fly();
         duck3.swim(12.5f);
+        duck3.swim();
         
         duck2.swim(13.6f);// duck2 объявлен как Swimmable, поэтому у него нет методов eat и fly.
 
