@@ -13,6 +13,10 @@ public class Human extends Actor{
     private List<Products> basket = new ArrayList<>();
 
 
+    public void putInBasket(List<Products> products){
+        this.basket.addAll(products);
+    }
+
     public void putInBasket(Products product){
         this.basket.add(product);
     }

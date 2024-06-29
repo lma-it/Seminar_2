@@ -35,10 +35,9 @@ public class Market implements MarketBehavoir, QueueBehavoir{
     @Override
     public void giveOrders(Human actor) {
         if (queueOfActors.contains(actor) && queueOfActors.peek() == actor){
-            if(actor.isTakeOrder == false){
-                actor.setTakeOrder(true);
+            if(actor.isTakeOrder){
+                releaseFromQueue(actor);
             }
-            releaseFromQueue(actor);
         }
     }
 
@@ -64,14 +63,19 @@ public class Market implements MarketBehavoir, QueueBehavoir{
     }
 
     @Override
-    public void update(List<Human> actors) {
+    public void update() {
         /*
          * Понятия не имею что должен обновлять данный метод, потому что все очереди и посетители обновляются автоматически, так как
          * списки для хранения этих значений являются глобальными, и при каждом обращении к ним, они обновляются автоматически, поэтому 
          * сделаю просто вывод списка посетителей магазина
          */
 
-        System.out.println(actors);
+        if(actors.size() != 0){
+            System.out.println(actors);
+        }else{
+            System.out.println("Покупатели получили свои заказы и покинули магазин.");
+        }
+        
     }
     
 }
