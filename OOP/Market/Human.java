@@ -1,7 +1,8 @@
 package OOP.Market;
 import java.util.List;
 import java.util.ArrayList;
-/*
+
+/**
  * Основной класс, который используется для создания посетителей магазина
  * Переопределяет методы из класса наследника Actor
  */
@@ -20,7 +21,8 @@ public class Human extends Actor{
     public void putInBasket(Products product){
         this.basket.add(product);
     }
-    /*
+
+    /**
      * Конструктор класса
      * 
      * @args name Имя посетителя заданное при создании экземпляра
@@ -50,7 +52,7 @@ public class Human extends Actor{
         return isTakeOrder;
     }
 
-    /*
+    /**
      * Метод возвращает имя посетителя
      * 
      * @return name Имя посетителя
